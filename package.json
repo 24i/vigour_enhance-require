@@ -1,0 +1,57 @@
+{
+  "name": "descriptors",
+  "version": "1.0.0",
+  "description": "Modifies the behaviour of `require` so that it ignores certain paths",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node test | tap-difflet && vtest test | tap-difflet && standard",
+    "cover": "istanbul cover --report none --print detail test/index.js",
+    "view-cover": "istanbul report html && open ./coverage/index.html",
+    "watch": "nodemon test | tap-difflet",
+    "travis": "npm run cover -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigour-io/enhance-require.git"
+  },
+  "keywords": [
+    "require",
+    "ignore",
+    "exclude"
+  ],
+  "author": "Vigour.io <dev@vigour.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vigour-io/enhance-require/issues"
+  },
+  "homepage": "https://github.com/vigour-io/enhance-require#readme",
+  "contributors": [
+    "Jim De Beer <jim@vigour.io>",
+    "Shawn Inder <shawn@vigour.io>"
+  ],
+  "dependencies": {
+    "assert": "^1.4.1",
+    "module": "^1.2.5",
+    "vigour-util": "^3.3.0"
+  },
+  "engines": {},
+  "devDependencies": {
+    "istanbul": "^0.4.4",
+    "standard": "^7.1.2",
+    "tape": "^4.6.0"
+  },
+  "browser": "./lib/browser.js",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        },
+        "./t.js"
+      ]
+    ]
+  }
+}
