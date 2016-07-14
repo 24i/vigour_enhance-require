@@ -1,6 +1,6 @@
 'use strict'
 const test = require('tape')
-const isNode = require('vigour-util/is/node')
+const isNode = require('is-node')
 
 test('require', function (t) {
   t.plan(11)

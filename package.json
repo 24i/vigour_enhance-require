@@ -31,11 +31,11 @@
   ],
   "dependencies": {
     "assert": "^1.4.1",
-    "module": "^1.2.5",
-    "vigour-util": "^3.3.0"
+    "module": "^1.2.5"
   },
   "engines": {},
   "devDependencies": {
+    "is-node": "^1.0.0",
     "istanbul": "^0.4.4",
     "standard": "^7.1.2",
     "tape": "^4.6.0"
