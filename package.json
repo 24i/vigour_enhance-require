@@ -1,5 +1,5 @@
 {
-  "name": "descriptors",
+  "name": "enhance-require",
   "version": "1.0.0",
   "description": "Modifies the behaviour of `require` so that it ignores certain paths",
   "main": "lib/index.js",
