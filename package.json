@@ -35,6 +35,8 @@
   },
   "engines": {},
   "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babelify": "^7.3.0",
     "is-node": "^1.0.0",
     "istanbul": "^0.4.4",
     "standard": "^7.1.2",
@@ -49,8 +51,7 @@
           "presets": [
             "es2015"
           ]
-        },
-        "./t.js"
+        }
       ]
     ]
   }
