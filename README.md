@@ -25,7 +25,7 @@ Outside of node (browserify, webpack, etc.), this function does nothing.
 <!-- VDOC END -->
 
 ```javascript
-var enhanceRequire = require('enhance-require')
+const enhanceRequire = require('enhance-require')
 enhanceRequire({
   package: true,
   exclude: '/scratch/'
