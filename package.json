@@ -1,6 +1,6 @@
 {
   "name": "enhance-require",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Modifies the behaviour of `require` so that it ignores certain paths",
   "main": "lib/index.js",
   "scripts": {
