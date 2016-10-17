@@ -4,7 +4,7 @@ Outside of node (browserify, webpack, etc.), this function does nothing.
 
 [![Build Status](https://travis-ci.org/vigour-io/enhance-require.svg?branch=master)](https://travis-ci.org/vigour-io/enhance-require)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![npm version](https://badge.fury.io/js/descriptors.svg)](https://badge.fury.io/js/descriptors)
+[![npm version](https://badge.fury.io/js/enhance-require.svg)](https://badge.fury.io/js/enhance-require)
 [![Coverage Status](https://coveralls.io/repos/github/vigour-io/enhance-require/badge.svg?branch=master)](https://coveralls.io/github/vigour-io/enhance-require?branch=master)
 
 -
