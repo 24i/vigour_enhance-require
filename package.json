@@ -4,9 +4,8 @@
   "description": "Modifies the behaviour of `require` so that it ignores certain paths",
   "main": "lib/index.js",
   "scripts": {
-    "test": "NODE_ENV=test node test | tap-difflet && vtest test | tap-difflet && standard",
+    "test": "node test | tap-difflet && standard",
     "cover": "istanbul cover --report none --print detail test/index.js",
-    "view-cover": "istanbul report html && open ./coverage/index.html",
     "dev": "nodemon test | tap-difflet",
     "travis": "npm run cover -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
   },
